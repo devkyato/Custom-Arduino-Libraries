@@ -39,3 +39,14 @@
 
 # debug information files
 *.dwo
+
+# PlatformIO and editor state
+.pio/
+.vscode/
+
+# Python tooling
+__pycache__/
+*.py[cod]
+
+# Release artifacts
+dist/

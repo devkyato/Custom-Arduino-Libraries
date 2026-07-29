@@ -1,0 +1,30 @@
+name: Feature request
+description: Propose a focused, reusable improvement.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What project or teaching problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed API or behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: compatibility
+    attributes:
+      label: Required boards
+      multiple: true
+      options:
+        - AVR / Uno
+        - ESP32
+        - RP2040 / Pico
+        - Other
+    validations:
+      required: true

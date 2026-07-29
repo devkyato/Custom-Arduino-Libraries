@@ -1,80 +1,78 @@
-# Supplementary Exercise 1 – Arduino LED Exercises
+# ArduinoPatterns
 
-This repository contains our solutions for **Supplementary Exercise No. 1 – Introduction to Microcontroller (Arduino) & Digital Output**.  
-The exercises focus on controlling LEDs using an Arduino and practicing basic programming logic such as sequences, delays, counting, and patterns.
+[![CI](https://github.com/devkyato/Custom-Arduino-Libraries/actions/workflows/ci.yml/badge.svg)](https://github.com/devkyato/Custom-Arduino-Libraries/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Each `.ino` file corresponds to a specific exercise given in the activity instructions. The programs demonstrate different LED behaviors like alternating lights, traffic light simulation, chasing LEDs, counting patterns, binary counting, and blinking with different timings.
+ArduinoPatterns is a small teaching library for coordinating LEDs and other digital
+outputs without `delay()`. It turns the original laboratory sketches in this
+repository into reusable components that can run alongside buttons, sensors,
+displays, networking, and serial communication.
 
-## Exercises Included
+## Features
 
-### Exercise A – Alternating Lights
-Simulates alternating LED patterns using six LEDs.  
-Different combinations of LEDs turn on with different delay timings.
+- `LedBank`: treat up to 32 output pins as a bit mask.
+- `LedAnimator`: play timed mask sequences using rollover-safe `millis()` logic.
+- `PeriodicOutput`: blink independent outputs at different rates.
+- No heap allocation, third-party dependencies, interrupts, or board-specific API.
+- Arduino IDE and PlatformIO examples for traffic lights, scanning, counting,
+  alternating patterns, and independent blinkers.
 
-**Done by:** Maurene
+## Install
 
----
+Download the latest release ZIP and choose **Sketch > Include Library > Add .ZIP
+Library** in Arduino IDE. In PlatformIO:
 
-### Exercise B – Traffic Light Simulation
-A simple traffic light system using three LEDs:
-- Green → Yellow → Red  
-Each light stays on for a specific duration to mimic real traffic lights.
+```ini
+lib_deps =
+  https://github.com/devkyato/Custom-Arduino-Libraries.git#v1.0.0
+```
 
-**Done by:** Maurene
+## Quick example
 
----
+```cpp
+#include <ArduinoPatterns.h>
 
-### Exercise C – Knight Rider (Chasing LEDs)
-Creates a "Knight Rider" style LED effect where lights turn on one by one from left to right, then reverse back.
+const uint8_t pins[] = {6, 7, 8};
+const PatternStep traffic[] = {
+    {0b001, 5000},  // green
+    {0b010, 2000},  // yellow
+    {0b100, 5000},  // red
+};
 
-**Done by:** Mayellah
+LedBank lights(pins, 3);
+LedAnimator animation(lights, traffic, 3);
 
----
+void setup() {
+  lights.begin();
+  animation.start(millis());
+}
 
-### Exercise D – Count Up and Down LEDs
-Uses six LEDs to simulate counting:
-- First counts **up** by turning LEDs on one by one
-- Then counts **down** by turning them off one by one
+void loop() {
+  animation.update(millis());
+  // Other application work can run here.
+}
+```
 
-**Done by:** Marquez
+Open **File > Examples > ArduinoPatterns** for complete sketches. The examples map
+the original student work into reusable patterns; the original commits remain in
+the repository history.
 
----
+See the [API reference](docs/API.md) for lifecycle, ownership, rollover, and
+active-low behavior.
 
-### Exercise E – LED Binary Counter
-Uses four LEDs to represent binary numbers from **0 to 15**.  
-Each LED represents a binary bit that turns ON or OFF depending on the number.
+## Compatibility
 
-**Done by:** Mayellah
+The public API uses only `pinMode`, `digitalWrite`, and unsigned millisecond
+arithmetic. CI compiles for Arduino AVR Uno, ESP32, and RP2040. Other Arduino
+architectures are expected to work but should be reported as verified only after an
+actual compile or hardware test.
 
----
+## Contributing
 
-### Exercise F – Double Blink with Different Timings
-Two LEDs blink at different speeds:
-- LED1 blinks every **1 second**
-- LED2 blinks every **0.5 seconds**
+Student-friendly issues are labeled `good first issue`. Changes should remain
+non-blocking, avoid dynamic allocation, include native tests for timing logic, and
+compile at least the Uno example. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-**Done by:** Marquez
+## License
 
----
-
-## Materials Used
-- Arduino Microcontroller  
-- Data Cable  
-- Computer  
-- Connecting Wires  
-- LEDs  
-
----
-
-## Group Members
-
-**Group 4**
-
-- Maurene – Exercise A & B  
-- Mayellah – Exercise C & E  
-- Marquez – Exercise D & F  
-
----
-
-## Notes
-These exercises were created as part of a laboratory activity for learning the basics of **Arduino programming and digital output control**.
+[MIT](LICENSE)

@@ -3,6 +3,13 @@
 All notable changes to ArduinoPatterns are documented here. The project follows
 [Semantic Versioning](https://semver.org/).
 
+## [1.0.1] - 2026-08-09
+
+### Changed
+
+- Add Zenodo and Citation File Format metadata for archival citation.
+- Refresh published Arduino library metadata for the 1.0.1 release.
+
 ## [1.0.0] - 2026-07-29
 
 ### Added
@@ -15,3 +22,4 @@ All notable changes to ArduinoPatterns are documented here. The project follows
 - Arduino IDE ZIP and PlatformIO installation metadata.
 
 [1.0.0]: https://github.com/devkyato/Custom-Arduino-Libraries/releases/tag/v1.0.0
+[1.0.1]: https://github.com/devkyato/Custom-Arduino-Libraries/compare/v1.0.0...v1.0.1

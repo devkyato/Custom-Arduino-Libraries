@@ -3,6 +3,24 @@
 All notable changes to ArduinoPatterns are documented here. The project follows
 [Semantic Versioning](https://semver.org/).
 
+## [1.0.2] - 2026-08-09
+
+### Changed
+
+- Overhaul the README and Zenodo presentation with installation, real code,
+  applications, limitations, documentation, companion-course links, and an
+  example-to-concept gallery.
+- Expand Citation File Format metadata and align release metadata and attribution
+  on `@dev.mako (devkyato)`.
+- Package API, citation, release-note, and governance documents in the Arduino
+  IDE ZIP.
+- Compile every example across Uno, ESP32, and RP2040 CI targets and validate
+  release metadata without additional dependencies.
+
+### Fixed
+
+- Update the bug-report template's stale example version.
+
 ## [1.0.1] - 2026-08-09
 
 ### Changed
@@ -23,3 +41,4 @@ All notable changes to ArduinoPatterns are documented here. The project follows
 
 [1.0.0]: https://github.com/devkyato/Custom-Arduino-Libraries/releases/tag/v1.0.0
 [1.0.1]: https://github.com/devkyato/Custom-Arduino-Libraries/compare/v1.0.0...v1.0.1
+[1.0.2]: https://github.com/devkyato/Custom-Arduino-Libraries/compare/v1.0.1...v1.0.2

@@ -24,7 +24,7 @@ Library** in Arduino IDE. In PlatformIO:
 
 ```ini
 lib_deps =
-  https://github.com/devkyato/Custom-Arduino-Libraries.git#v1.0.0
+  https://github.com/devkyato/Custom-Arduino-Libraries.git#v1.0.1
 ```
 
 ## Quick example
@@ -66,6 +66,23 @@ The public API uses only `pinMode`, `digitalWrite`, and unsigned millisecond
 arithmetic. CI compiles for Arduino AVR Uno, ESP32, and RP2040. Other Arduino
 architectures are expected to work but should be reported as verified only after an
 actual compile or hardware test.
+
+## Citation
+
+If you use this software in research or teaching, please cite the Zenodo archive / this repository:
+
+```text
+devkyato. (2026). ArduinoPatterns: non-blocking LED and digital-output patterns for Arduino (Version 1.0.1).
+```
+
+See [CITATION.cff](CITATION.cff) for machine-readable metadata.
+
+## Applications
+
+- Non-blocking LED and traffic-light demonstrations.
+- Arduino timing and state-machine lessons.
+- Responsive ESP32 and RP2040 digital-output sketches.
+- Reusable output patterns alongside sensors and serial communication.
 
 ## Contributing
 

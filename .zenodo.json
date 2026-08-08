@@ -1,0 +1,21 @@
+{
+  "creators": [{"name": "devkyato", "affiliation": "MATA Company"}],
+  "contributors": [{"name": "Cursor Agent", "type": "Other"}],
+  "title": "ArduinoPatterns: non-blocking LED and digital-output patterns for Arduino",
+  "description": "ArduinoPatterns is a small teaching library for coordinating LEDs and other digital outputs without delay(). It provides rollover-safe millis()-based patterns, output banks, and periodic outputs with no heap allocation or board-specific API. Usage: install the library in Arduino IDE or PlatformIO, include ArduinoPatterns.h, and update patterns from loop(). Applications include Arduino lessons, traffic-light demonstrations, ESP32 and RP2040 sketches, responsive user interfaces, and embedded output control.",
+  "version": "1.0.1",
+  "keywords": ["Arduino", "LED", "non-blocking", "millis", "library", "education", "ESP32", "RP2040"],
+  "license": "mit",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "related_identifiers": [
+    {"identifier": "https://github.com/devkyato/Custom-Arduino-Libraries", "relation": "isSupplementTo", "resource_type": "software"},
+    {"identifier": "https://github.com/devkyato/Datary", "relation": "references", "resource_type": "software"},
+    {"identifier": "https://github.com/devkyato/OpenNet", "relation": "references", "resource_type": "software"},
+    {"identifier": "https://github.com/devkyato/TapAuth", "relation": "references", "resource_type": "software"},
+    {"identifier": "https://github.com/devkyato/Lowpack", "relation": "references", "resource_type": "software"},
+    {"identifier": "https://github.com/devkyato/Relay", "relation": "references", "resource_type": "software"},
+    {"identifier": "https://github.com/devkyato/Arduino-Programs-Guide", "relation": "references", "resource_type": "software"}
+  ]
+}

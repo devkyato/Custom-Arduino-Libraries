@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "ArduinoPatterns: non-blocking LED and digital-output patterns for Arduino"
+authors:
+  - family-names: devkyato
+    affiliation: "MATA Company"
+version: 1.0.1
+license: MIT
+repository-code: "https://github.com/devkyato/Custom-Arduino-Libraries"
+url: "https://github.com/devkyato/Custom-Arduino-Libraries"
+abstract: "Non-blocking LED and digital-output patterns for Arduino."
+keywords: [Arduino, LED, non-blocking, millis, library, education, ESP32, RP2040]
+preferred-citation:
+  type: software
+  title: "ArduinoPatterns: non-blocking LED and digital-output patterns for Arduino"
+  authors:
+    - family-names: devkyato
+      affiliation: "MATA Company"
+  version: 1.0.1

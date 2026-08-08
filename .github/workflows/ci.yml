@@ -1,4 +1,4 @@
-name: CI
+﻿name: CI
 
 on:
   push:
@@ -29,13 +29,13 @@ jobs:
           - fqbn: arduino:avr:uno
             name: uno
           - fqbn: esp32:esp32:esp32
-            name: esp32
+            name: esp32dev
           - fqbn: rp2040:rp2040:rpipico
-            name: rp2040
+            name: pico
             platform: |
               - name: rp2040:rp2040
                 source-url: https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
-    name: Compile all examples (${{ matrix.board.name }})
+    name: compile (${{ matrix.board.name }})
     steps:
       - uses: actions/checkout@v7
       - uses: arduino/compile-sketches@v1

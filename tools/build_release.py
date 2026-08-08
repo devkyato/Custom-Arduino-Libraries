@@ -11,8 +11,14 @@ DIST = ROOT / "dist"
 INCLUDED = (
     "src",
     "examples",
+    "docs",
     "README.md",
     "CHANGELOG.md",
+    "RELEASE_NOTES.md",
+    "CITATION.cff",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    "SECURITY.md",
     "LICENSE",
     "library.properties",
     "library.json",
@@ -54,6 +60,8 @@ def main() -> None:
 
     with zipfile.ZipFile(output) as archive:
         required = {
+            "ArduinoPatterns/CITATION.cff",
+            "ArduinoPatterns/docs/API.md",
             "ArduinoPatterns/library.properties",
             "ArduinoPatterns/src/ArduinoPatterns.h",
         }

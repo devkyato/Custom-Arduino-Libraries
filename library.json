@@ -1,13 +1,13 @@
 {
   "name": "ArduinoPatterns",
-  "version": "1.0.1",
-  "description": "Non-blocking LED and digital-output patterns for Arduino.",
-  "keywords": ["arduino", "led", "non-blocking", "millis", "education"],
+  "version": "1.0.2",
+  "description": "Rollover-safe, non-blocking LED and digital-output patterns for Arduino without interrupts or heap allocation.",
+  "keywords": ["arduino", "led", "digital-output", "non-blocking", "millis", "state-machine", "education"],
   "repository": {
     "type": "git",
     "url": "https://github.com/devkyato/Custom-Arduino-Libraries.git"
   },
-  "authors": [{"name": "devkyato", "maintainer": true}],
+  "authors": [{"name": "@dev.mako (devkyato)", "maintainer": true}],
   "license": "MIT",
   "frameworks": ["arduino"],
   "platforms": "*",

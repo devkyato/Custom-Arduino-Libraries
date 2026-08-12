@@ -4,7 +4,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21853284.svg)](https://doi.org/10.5281/zenodo.21853284)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-ArduinoPatterns 1.0.2 is a focused Arduino library for coordinating LEDs and
+ArduinoPatterns 1.0.3 is a focused Arduino library for coordinating LEDs and
 other digital outputs without blocking `loop()`. It packages common teaching
 patterns into reusable components that can run alongside buttons, sensors,
 serial communication, displays, or networking.
@@ -25,7 +25,7 @@ Library** in Arduino IDE. In PlatformIO:
 
 ```ini
 lib_deps =
-  https://github.com/devkyato/Custom-Arduino-Libraries.git#v1.0.2
+  https://github.com/devkyato/Custom-Arduino-Libraries.git#v1.0.3
 ```
 
 To work from source, clone the repository into the Arduino `libraries` folder or
@@ -108,7 +108,7 @@ architectures may work but are unverified.
 - [Examples gallery](#examples-gallery) — working sketches mapped to concepts.
 - [Contributing guide](CONTRIBUTING.md) — development and test expectations.
 - [Security policy](SECURITY.md) — supported release and reporting process.
-- [Changelog](CHANGELOG.md) and [1.0.2 release notes](RELEASE_NOTES.md).
+- [Changelog](CHANGELOG.md) and [1.0.3 release notes](RELEASE_NOTES.md).
 
 ## Citation
 
@@ -116,7 +116,7 @@ If you use this software in research or teaching, cite the archived release when
 available, or use:
 
 ```text
-@dev.mako (devkyato). (2026). ArduinoPatterns: non-blocking LED and digital-output patterns for Arduino (Version 1.0.2). Zenodo. https://doi.org/10.5281/zenodo.21853284
+@dev.mako (devkyato). (2026). ArduinoPatterns: non-blocking LED and digital-output patterns for Arduino (Version 1.0.3). Zenodo. https://doi.org/10.5281/zenodo.21853284
 ```
 
 See [CITATION.cff](CITATION.cff) for machine-readable metadata.

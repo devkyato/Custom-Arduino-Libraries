@@ -5,6 +5,8 @@ All notable changes to ArduinoPatterns are documented here. The project follows
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-08-12
+
 ### Added
 
 - Add a `ButtonPause` example showing non-blocking pause/resume with `stop()` and `start()`.
@@ -51,4 +53,5 @@ All notable changes to ArduinoPatterns are documented here. The project follows
 
 [1.0.0]: https://github.com/devkyato/Custom-Arduino-Libraries/releases/tag/v1.0.0
 [1.0.1]: https://github.com/devkyato/Custom-Arduino-Libraries/compare/v1.0.0...v1.0.1
+[1.0.3]: https://github.com/devkyato/Custom-Arduino-Libraries/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/devkyato/Custom-Arduino-Libraries/compare/v1.0.1...v1.0.2

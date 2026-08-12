@@ -67,7 +67,7 @@ def main() -> None:
     cff = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
 
-    assert version == "1.0.2"
+    assert version == "1.0.3"
     assert zenodo["version"] == version
     assert library_json["version"] == version
     assert re.search(rf"^version: {re.escape(version)}$", cff, re.MULTILINE)

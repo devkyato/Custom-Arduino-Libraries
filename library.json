@@ -1,6 +1,6 @@
 {
   "name": "ArduinoPatterns",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Rollover-safe, non-blocking LED and digital-output patterns for Arduino without interrupts or heap allocation.",
   "keywords": ["arduino", "led", "digital-output", "non-blocking", "millis", "state-machine", "education"],
   "repository": {

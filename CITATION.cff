@@ -4,8 +4,8 @@ title: "ArduinoPatterns: non-blocking LED and digital-output patterns for Arduin
 authors:
   - name: "@dev.mako (devkyato)"
     affiliation: "MATA Company"
-version: 1.0.2
-date-released: 2026-08-09
+version: 1.0.3
+date-released: 2026-08-12
 license: MIT
 repository-code: "https://github.com/devkyato/Custom-Arduino-Libraries"
 url: "https://github.com/devkyato/Custom-Arduino-Libraries"
@@ -36,8 +36,8 @@ preferred-citation:
   authors:
     - name: "@dev.mako (devkyato)"
       affiliation: "MATA Company"
-  version: 1.0.2
-  date-released: 2026-08-09
+  version: 1.0.3
+  date-released: 2026-08-12
   repository-code: "https://github.com/devkyato/Custom-Arduino-Libraries"
   doi: 10.5281/zenodo.21853284
   license: MIT

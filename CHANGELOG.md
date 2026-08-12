@@ -3,6 +3,16 @@
 All notable changes to ArduinoPatterns are documented here. The project follows
 [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+
+- Add a `ButtonPause` example showing non-blocking pause/resume with `stop()` and `start()`.
+
+### Fixed
+
+- Update the bug-report template placeholder to 1.0.2.
+
 ## [1.0.2] - 2026-08-09
 
 ### Changed

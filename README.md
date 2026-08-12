@@ -15,8 +15,8 @@ serial communication, displays, or networking.
 - `LedAnimator`: play timed mask sequences using rollover-safe `millis()` logic.
 - `PeriodicOutput`: blink independent outputs at different rates.
 - No heap allocation, third-party dependencies, interrupts, or board-specific API.
-- Six compile-checked examples spanning traffic lights, scanners, counters,
-  alternating masks, and independent blinkers.
+- Seven compile-checked examples spanning traffic lights, scanners, counters,
+  alternating masks, independent blinkers, and button pause/resume.
 
 ## Installation
 
@@ -70,6 +70,7 @@ responsive.
 | [BinaryCounter](examples/BinaryCounter/BinaryCounter.ino) | direct `LedBank` masks and rollover-safe timing | arrays, bit masks, and output mapping |
 | [CountUpDown](examples/CountUpDown/CountUpDown.ino) | longer repeating animation tables | progression toward state-machine lessons |
 | [IndependentBlink](examples/IndependentBlink/IndependentBlink.ino) | two concurrent periodic outputs | cooperative scheduling used throughout Exercises C–F |
+| [ButtonPause](examples/ButtonPause/ButtonPause.ino) | pause and resume with `stop()` / `start()` | interactive control without blocking `loop()` |
 
 These examples are maintained adaptations of concepts present in the repository's
 earlier laboratory sketches; they are not claimed as unchanged originals. Git
